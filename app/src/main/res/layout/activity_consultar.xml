@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/spdocumento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Consultar">
+
+    <EditText
+        android:id="@+id/etidestacionamiento"
+        android:layout_width="300dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Codigo de Barras"
+        android:inputType="number"
+        android:maxLength="14"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvmonto"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="58dp"
+        android:text="Cargos Extras  : "
+        android:textSize="25sp"
+        android:visibility="gone"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etidestacionamiento" />
+
+    <EditText
+        android:id="@+id/etAdicional"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="50dp"
+        android:hint="Ingrese el monto"
+        android:inputType="numberDecimal"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/tvmonto"
+        app:layout_constraintTop_toBottomOf="@+id/etidestacionamiento" />
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="140dp"
+        android:text="PAGAR"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvmonto" />
+
+    <CheckBox
+        android:id="@+id/cbChifa"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="44dp"
+        android:text="Convenio Chifa"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spDocumento"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="58dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/etnumerodocument"
+        app:layout_constraintTop_toBottomOf="@+id/cbChifa" />
+
+    <EditText
+        android:id="@+id/etnumerodocument"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbChifa" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="140dp"
+        android:text="CANCELAR"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvmonto" />
+
+    <Button
+        android:id="@+id/btnacumular"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="140dp"
+        android:text="ACUMULAR"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/btnacuenta"
+        app:layout_constraintTop_toBottomOf="@+id/etidestacionamiento" />
+
+    <TextView
+        android:id="@+id/tvmuestramonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="70dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/etidestacionamiento"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnacuenta"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="140dp"
+        android:text="PAGO A CUENTA"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/btnCancel"
+        app:layout_constraintTop_toBottomOf="@+id/etidestacionamiento" />
+
+    <Button
+        android:id="@+id/btnpagaracuenta"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="140dp"
+        android:text="PAGAR"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/btnCancel"
+        app:layout_constraintTop_toBottomOf="@+id/etidestacionamiento" />
+
+</android.support.constraint.ConstraintLayout>

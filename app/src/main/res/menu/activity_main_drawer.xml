@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_registro"
+            android:icon="@drawable/nota"
+            android:title="REGISTRO"
+            />
+        <item
+            android:id="@+id/nav_listado"
+            android:icon="@drawable/listado"
+            android:visible="true"
+            android:title="LISTADO" />
+        <item
+            android:id="@+id/nav_generador"
+            android:icon="@drawable/pago"
+            android:title="PAGO" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_pago"
+                android:icon="@drawable/pago"
+                android:visible="false"
+                android:title="CodigoQR" />
+            <item
+                android:id="@+id/nav_send"
+                android:visible="false"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
