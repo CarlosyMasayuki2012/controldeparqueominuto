@@ -1,6 +1,8 @@
 package com.example.carlosantoniomiyashirotsukazan.controldeparqueoborrador.Entidades;
 
-public class TipoVehiculo {
+import java.io.Serializable;
+
+public class TipoVehiculo implements Serializable {
 
     private Integer id;
     private  String tipoVehiculo;

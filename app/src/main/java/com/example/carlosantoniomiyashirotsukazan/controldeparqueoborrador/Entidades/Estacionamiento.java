@@ -1,10 +1,12 @@
 package com.example.carlosantoniomiyashirotsukazan.controldeparqueoborrador.Entidades;
 
+import java.io.Serializable;
+
 /**
  * Created by carlosantoniomiyashirotsukazan on 28/03/18.
  */
 
-public class Estacionamiento {
+public class Estacionamiento implements Serializable {
 
     private int Id_estacionamiento;
     private String fecha_ingreso;

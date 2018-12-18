@@ -93,9 +93,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else if (id == R.id.nav_listado) {
 
-            Intent intent = new Intent(MainActivity.this,MainActivity.class);
+            Intent intent = new Intent(MainActivity.this,ReimpresionActivity.class);
+            startActivity(intent);
+            finish();
 
-        } else if (id == R.id.nav_pago) {
+        } else if (id == R.id.nav_reimpresion) {
 
             Intent intent = new Intent(MainActivity.this,Consultar.class);
             startActivity(intent);

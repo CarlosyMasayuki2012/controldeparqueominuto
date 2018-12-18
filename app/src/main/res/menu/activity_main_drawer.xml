@@ -23,7 +23,7 @@
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_pago"
+                android:id="@+id/nav_reimpresion"
                 android:icon="@drawable/pago"
                 android:visible="false"
                 android:title="CodigoQR" />

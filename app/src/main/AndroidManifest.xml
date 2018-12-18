@@ -31,7 +31,8 @@
         <activity android:name=".PagoParcial" />
         <activity android:name=".RegistrarPago" />
         <activity android:name=".PagoAcuenta" />
-        <activity android:name=".Facturacion"></activity>
+        <activity android:name=".Facturacion" />
+        <activity android:name=".ReimpresionActivity"></activity>
     </application>
 
 </manifest>
